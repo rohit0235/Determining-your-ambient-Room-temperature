@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if ("geolocation" in navigator) {
         navigator.geolocation.getCurrentPosition(async (position) => {
             const { latitude, longitude } = position.coords;
-            const apiKey = 'ae6858db44906f849572452180bb072f';
+            const apiKey = '(api key)';
             const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
 
             try {
